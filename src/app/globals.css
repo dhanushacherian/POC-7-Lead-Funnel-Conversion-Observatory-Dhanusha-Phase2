@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --background: #070912;
+  --foreground: #f5f7ff;
+  --panel: #0c1020;
+  --panel-soft: rgba(255, 255, 255, 0.035);
+  --border: rgba(255, 255, 255, 0.09);
+  --muted: rgba(230, 235, 255, 0.52);
+  --accent: #7c8cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(92, 104, 180, 0.10),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(70, 88, 160, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #070912 0%,
+      #080b15 45%,
+      #050711 100%
+    );
+  color: var(--foreground);
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+select option {
+  background: #0b0f1d;
+  color: #ffffff;
+}
+
+::selection {
+  background: rgba(124, 140, 255, 0.35);
+  color: #ffffff;
+}
+
+/* Cinematic scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Observatory glow */
+
+.observatory-glow {
+  position: relative;
+}
+
+.observatory-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(124, 140, 255, 0.08),
+      transparent 55%
+    );
+  pointer-events: none;
+}
+
+/* Glass panel */
+
+.glass-panel {
+  border: 1px solid var(--border);
+  background: var(--panel-soft);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* Subtle entrance animation */
+
+.cinematic-enter {
+  animation: cinematic-enter 500ms ease-out both;
+}
+
+@keyframes cinematic-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

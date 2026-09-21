@@ -1,0 +1,2854 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+public/
+  file.svg
+  globe.svg
+  next.svg
+  vercel.svg
+  window.svg
+screenshots/
+  _Developer_Signature.png
+  dashboard.png
+  Filter_Validation.png
+  Intelligence.png
+  Mobile_Responsive.png
+  README.md
+src/
+  app/
+    favicon.ico
+    globals.css
+    layout.tsx
+    page.tsx
+  components/
+    CohortHeatmap.tsx
+    FilterBar.tsx
+    FunnelChart.tsx
+    IntelligencePanel.tsx
+    KPISection.tsx
+    MetadataModal.tsx
+    SankeyChart.tsx
+    StageAging.tsx
+  data/
+    crmData.ts
+  lib/
+    calculations.ts
+    download.ts
+  types/
+    crm.ts
+.gitignore
+AGENTS.md
+CLAUDE.md
+eslint.config.mjs
+next.config.ts
+package.json
+postcss.config.mjs
+README.md
+tsconfig.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/file.svg">
+<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 13.5V5.41a1 1 0 0 0-.3-.7L9.8.29A1 1 0 0 0 9.08 0H1.5v13.5A2.5 2.5 0 0 0 4 16h8a2.5 2.5 0 0 0 2.5-2.5m-1.5 0v-7H8v-5H3v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1M9.5 5V2.12L12.38 5zM5.13 5h-.62v1.25h2.12V5zm-.62 3h7.12v1.25H4.5zm.62 3h-.62v1.25h7.12V11z" clip-rule="evenodd" fill="#666" fill-rule="evenodd"/></svg>
+</file>
+
+<file path="public/globe.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.27 14.1a6.5 6.5 0 0 0 3.67-3.45q-1.24.21-2.7.34-.31 1.83-.97 3.1M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.48-1.52a7 7 0 0 1-.96 0H7.5a4 4 0 0 1-.84-1.32q-.38-.89-.63-2.08a40 40 0 0 0 3.92 0q-.25 1.2-.63 2.08a4 4 0 0 1-.84 1.31zm2.94-4.76q1.66-.15 2.95-.43a7 7 0 0 0 0-2.58q-1.3-.27-2.95-.43a18 18 0 0 1 0 3.44m-1.27-3.54a17 17 0 0 1 0 3.64 39 39 0 0 1-4.3 0 17 17 0 0 1 0-3.64 39 39 0 0 1 4.3 0m1.1-1.17q1.45.13 2.69.34a6.5 6.5 0 0 0-3.67-3.44q.65 1.26.98 3.1M8.48 1.5l.01.02q.41.37.84 1.31.38.89.63 2.08a40 40 0 0 0-3.92 0q.25-1.2.63-2.08a4 4 0 0 1 .85-1.32 7 7 0 0 1 .96 0m-2.75.4a6.5 6.5 0 0 0-3.67 3.44 29 29 0 0 1 2.7-.34q.31-1.83.97-3.1M4.58 6.28q-1.66.16-2.95.43a7 7 0 0 0 0 2.58q1.3.27 2.95.43a18 18 0 0 1 0-3.44m.17 4.71q-1.45-.12-2.69-.34a6.5 6.5 0 0 0 3.67 3.44q-.65-1.27-.98-3.1" fill="#666"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+</file>
+
+<file path="public/next.svg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 394 80"><path fill="#000" d="M262 0h68.5v12.7h-27.2v66.6h-13.6V12.7H262V0ZM149 0v12.7H94v20.4h44.3v12.6H94v21h55v12.6H80.5V0h68.7zm34.3 0h-17.8l63.8 79.4h17.9l-32-39.7 32-39.6h-17.9l-23 28.6-23-28.6zm18.3 56.7-9-11-27.1 33.7h17.8l18.3-22.7z"/><path fill="#000" d="M81 79.3 17 0H0v79.3h13.6V17l50.2 62.3H81Zm252.6-.4c-1 0-1.8-.4-2.5-1s-1.1-1.6-1.1-2.6.3-1.8 1-2.5 1.6-1 2.6-1 1.8.3 2.5 1a3.4 3.4 0 0 1 .6 4.3 3.7 3.7 0 0 1-3 1.8zm23.2-33.5h6v23.3c0 2.1-.4 4-1.3 5.5a9.1 9.1 0 0 1-3.8 3.5c-1.6.8-3.5 1.3-5.7 1.3-2 0-3.7-.4-5.3-1s-2.8-1.8-3.7-3.2c-.9-1.3-1.4-3-1.4-5h6c.1.8.3 1.6.7 2.2s1 1.2 1.6 1.5c.7.4 1.5.5 2.4.5 1 0 1.8-.2 2.4-.6a4 4 0 0 0 1.6-1.8c.3-.8.5-1.8.5-3V45.5zm30.9 9.1a4.4 4.4 0 0 0-2-3.3 7.5 7.5 0 0 0-4.3-1.1c-1.3 0-2.4.2-3.3.5-.9.4-1.6 1-2 1.6a3.5 3.5 0 0 0-.3 4c.3.5.7.9 1.3 1.2l1.8 1 2 .5 3.2.8c1.3.3 2.5.7 3.7 1.2a13 13 0 0 1 3.2 1.8 8.1 8.1 0 0 1 3 6.5c0 2-.5 3.7-1.5 5.1a10 10 0 0 1-4.4 3.5c-1.8.8-4.1 1.2-6.8 1.2-2.6 0-4.9-.4-6.8-1.2-2-.8-3.4-2-4.5-3.5a10 10 0 0 1-1.7-5.6h6a5 5 0 0 0 3.5 4.6c1 .4 2.2.6 3.4.6 1.3 0 2.5-.2 3.5-.6 1-.4 1.8-1 2.4-1.7a4 4 0 0 0 .8-2.4c0-.9-.2-1.6-.7-2.2a11 11 0 0 0-2.1-1.4l-3.2-1-3.8-1c-2.8-.7-5-1.7-6.6-3.2a7.2 7.2 0 0 1-2.4-5.7 8 8 0 0 1 1.7-5 10 10 0 0 1 4.3-3.5c2-.8 4-1.2 6.4-1.2 2.3 0 4.4.4 6.2 1.2 1.8.8 3.2 2 4.3 3.4 1 1.4 1.5 3 1.5 5h-5.8z"/></svg>
+</file>
+
+<file path="public/vercel.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 1000"><path d="m577.3 0 577.4 1000H0z" fill="#fff"/></svg>
+</file>
+
+<file path="public/window.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 2.5h13v10a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1zM0 1h16v11.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 12.5zm3.75 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5M7 4.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m1.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" fill="#666"/></svg>
+</file>
+
+<file path="screenshots/README.md">
+
+</file>
+
+<file path="src/app/globals.css">
+@import "tailwindcss";
+
+:root {
+  --background: #070912;
+  --foreground: #f5f7ff;
+  --panel: #0c1020;
+  --panel-soft: rgba(255, 255, 255, 0.035);
+  --border: rgba(255, 255, 255, 0.09);
+  --muted: rgba(230, 235, 255, 0.52);
+  --accent: #7c8cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(92, 104, 180, 0.10),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(70, 88, 160, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #070912 0%,
+      #080b15 45%,
+      #050711 100%
+    );
+  color: var(--foreground);
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+select option {
+  background: #0b0f1d;
+  color: #ffffff;
+}
+
+::selection {
+  background: rgba(124, 140, 255, 0.35);
+  color: #ffffff;
+}
+
+/* Cinematic scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Observatory glow */
+
+.observatory-glow {
+  position: relative;
+}
+
+.observatory-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(124, 140, 255, 0.08),
+      transparent 55%
+    );
+  pointer-events: none;
+}
+
+/* Glass panel */
+
+.glass-panel {
+  border: 1px solid var(--border);
+  background: var(--panel-soft);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* Subtle entrance animation */
+
+.cinematic-enter {
+  animation: cinematic-enter 500ms ease-out both;
+}
+
+@keyframes cinematic-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</file>
+
+<file path="src/app/layout.tsx">
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Infocreon Internship - Lead Funnel Conversion Observatory",
+  description: "Lead Funnel Conversion Observatory - PoC-7",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
+</file>
+
+<file path="src/app/page.tsx">
+"use client";
+
+import { useMemo, useState } from "react";
+
+import { downloadCSV, downloadJSON } from "@/lib/download";
+
+import CohortHeatmap from "@/components/CohortHeatmap";
+import FilterBar from "@/components/FilterBar";
+import FunnelChart from "@/components/FunnelChart";
+import IntelligencePanel from "@/components/IntelligencePanel";
+import KPISection from "@/components/KPISection";
+import MetadataModal from "@/components/MetadataModal";
+import SankeyChart from "@/components/SankeyChart";
+import StageAging from "@/components/StageAging";
+
+import {
+  crmData,
+  locations,
+  products,
+  teams,
+} from "@/data/crmData";
+
+export default function Home() {
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
+  const [location, setLocation] = useState("All");
+  const [team, setTeam] = useState("All");
+  const [product, setProduct] = useState("All");
+
+  const [isIntelligenceOpen, setIsIntelligenceOpen] =
+    useState(false);
+
+  const [selectedStage, setSelectedStage] =
+    useState<string>("Pipeline");
+
+  const [isMetadataOpen, setIsMetadataOpen] =
+    useState(false);
+
+  const filteredData = useMemo(() => {
+    return crmData.filter((lead) => {
+      const matchesStartDate =
+        !startDate || lead.date >= startDate;
+
+      const matchesEndDate =
+        !endDate || lead.date <= endDate;
+
+      const matchesLocation =
+        location === "All" ||
+        lead.location === location;
+
+      const matchesTeam =
+        team === "All" ||
+        lead.team === team;
+
+      const matchesProduct =
+        product === "All" ||
+        lead.product === product;
+
+      return (
+        matchesStartDate &&
+        matchesEndDate &&
+        matchesLocation &&
+        matchesTeam &&
+        matchesProduct
+      );
+    });
+  }, [
+    startDate,
+    endDate,
+    location,
+    team,
+    product,
+  ]);
+
+  const resetFilters = () => {
+    setStartDate("");
+    setEndDate("");
+    setLocation("All");
+    setTeam("All");
+    setProduct("All");
+  };
+
+  return (
+    <div className="min-h-screen bg-[#070912] text-white">
+
+      {/* Atmospheric Background */}
+      <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+
+        <div className="absolute left-1/2 top-[-300px] h-[700px] w-[900px] -translate-x-1/2 rounded-full bg-indigo-500/[0.07] blur-[140px]" />
+
+        <div className="absolute bottom-[-300px] right-[-200px] h-[600px] w-[600px] rounded-full bg-violet-500/[0.05] blur-[140px]" />
+
+        <div className="absolute left-[-200px] top-[40%] h-[500px] w-[500px] rounded-full bg-slate-500/[0.04] blur-[130px]" />
+
+      </div>
+
+      {/* Header */}
+      <header className="sticky top-0 z-30 border-b border-white/[0.06] bg-[#070912]/80 backdrop-blur-2xl">
+
+        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+
+          <div className="min-w-0">
+
+            <div className="flex items-center gap-3">
+
+              <div className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_14px_rgba(52,211,153,0.7)]" />
+
+              <p className="text-[10px] font-medium uppercase tracking-[0.35em] text-white/35">
+                Infocreon Internship
+              </p>
+
+            </div>
+
+            <h1 className="mt-2 truncate text-xl font-semibold tracking-tight text-white sm:text-2xl">
+              Lead Funnel Conversion Observatory
+            </h1>
+
+            <p className="mt-1 hidden text-xs text-white/35 sm:block">
+              Conversion intelligence · stage leakage · pipeline aging
+            </p>
+
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setIsMetadataOpen(true)}
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.03] text-sm font-medium text-white/60 transition hover:border-white/[0.15] hover:bg-white/[0.07] hover:text-white"
+            aria-label="Open developer information"
+          >
+            ⓘ
+          </button>
+
+        </div>
+
+      </header>
+
+      {/* Main */}
+      <main className="relative mx-auto min-h-screen max-w-[1600px] px-4 py-6 sm:px-6 lg:px-8">
+
+        {/* Observatory Source */}
+        <section className="mb-6 flex flex-col justify-between gap-4 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-4 backdrop-blur-xl md:flex-row md:items-center">
+
+          <div>
+
+            <p className="text-[10px] uppercase tracking-[0.3em] text-white/25">
+              Observatory Source
+            </p>
+
+            <p className="mt-1 text-sm font-medium text-white/70">
+              Synthetic CRM Dataset
+            </p>
+
+            <p className="mt-1 text-xs text-white/35">
+              Demonstration data for Lead → Opportunity → Win analysis
+            </p>
+
+          </div>
+
+          <div className="flex items-center gap-2 self-start rounded-full border border-emerald-300/[0.12] bg-emerald-300/[0.04] px-3 py-1.5 md:self-auto">
+
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+
+            <span className="text-[10px] uppercase tracking-wider text-emerald-200/60">
+              Data Ready
+            </span>
+
+          </div>
+
+        </section>
+
+        {/* Filters */}
+        <FilterBar
+          startDate={startDate}
+          endDate={endDate}
+          location={location}
+          team={team}
+          product={product}
+          locations={locations}
+          teams={teams}
+          products={products}
+          onStartDateChange={setStartDate}
+          onEndDateChange={setEndDate}
+          onLocationChange={setLocation}
+          onTeamChange={setTeam}
+          onProductChange={setProduct}
+          onReset={resetFilters}
+        />
+
+        {/* Active Scope */}
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+
+          <span className="text-[10px] uppercase tracking-[0.25em] text-white/25">
+            Active Scope
+          </span>
+
+          <span className="rounded-full border border-white/[0.07] bg-white/[0.025] px-3 py-1 text-[10px] text-white/40">
+            {filteredData.length} records
+          </span>
+
+          {location !== "All" && (
+            <span className="rounded-full border border-indigo-300/[0.12] bg-indigo-300/[0.04] px-3 py-1 text-[10px] text-indigo-200/60">
+              Location: {location}
+            </span>
+          )}
+
+          {team !== "All" && (
+            <span className="rounded-full border border-indigo-300/[0.12] bg-indigo-300/[0.04] px-3 py-1 text-[10px] text-indigo-200/60">
+              Team: {team}
+            </span>
+          )}
+
+          {product !== "All" && (
+            <span className="rounded-full border border-indigo-300/[0.12] bg-indigo-300/[0.04] px-3 py-1 text-[10px] text-indigo-200/60">
+              Product: {product}
+            </span>
+          )}
+
+          {(startDate || endDate) && (
+            <span className="rounded-full border border-indigo-300/[0.12] bg-indigo-300/[0.04] px-3 py-1 text-[10px] text-indigo-200/60">
+              Date range active
+            </span>
+          )}
+
+        </div>
+
+        {/* Data Export */}
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-3 backdrop-blur-xl">
+
+          <div>
+
+            <p className="text-[10px] uppercase tracking-[0.25em] text-white/25">
+              Data Export
+            </p>
+
+            <p className="mt-1 text-xs text-white/35">
+              Download the currently filtered CRM records
+            </p>
+
+          </div>
+
+          <div className="flex gap-2">
+
+            <button
+              type="button"
+              onClick={() => downloadCSV(filteredData)}
+              className="rounded-xl border border-white/[0.08] bg-white/[0.04] px-4 py-2 text-xs font-medium text-white/60 transition hover:border-white/[0.15] hover:bg-white/[0.08] hover:text-white"
+            >
+              Download CSV
+            </button>
+
+            <button
+              type="button"
+              onClick={() => downloadJSON(filteredData)}
+              className="rounded-xl border border-indigo-300/[0.12] bg-indigo-300/[0.05] px-4 py-2 text-xs font-medium text-indigo-100/70 transition hover:border-indigo-300/[0.25] hover:bg-indigo-300/[0.10] hover:text-white"
+            >
+              Download JSON
+            </button>
+
+          </div>
+
+        </div>
+
+        {/* KPI Section */}
+        <section className="mt-6">
+          <KPISection data={filteredData} />
+        </section>
+
+        {/* Primary Funnel */}
+        <section className="relative mt-8 overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.02] p-2 shadow-2xl">
+
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(99,102,241,0.10),transparent_45%)]" />
+
+          <div className="relative">
+
+            <FunnelChart
+              data={filteredData}
+              onStageClick={(stage) => {
+                setSelectedStage(stage);
+                setIsIntelligenceOpen(true);
+              }}
+            />
+
+          </div>
+
+        </section>
+
+        {/* Secondary Visualizations */}
+        <section className="mt-6 grid gap-6 lg:grid-cols-2">
+
+          <SankeyChart
+            data={filteredData}
+          />
+
+          <CohortHeatmap
+            data={filteredData}
+          />
+
+        </section>
+
+        {/* Stage Aging */}
+        <section className="mt-6">
+
+          <StageAging
+            data={filteredData}
+          />
+
+        </section>
+
+        {/* Decision Layer */}
+        <section className="relative mt-8 overflow-hidden rounded-3xl border border-indigo-300/[0.10] bg-indigo-300/[0.025] p-6 md:p-8">
+
+          <div className="pointer-events-none absolute right-[-100px] top-[-100px] h-[300px] w-[300px] rounded-full bg-indigo-500/[0.08] blur-[100px]" />
+
+          <div className="relative flex flex-col justify-between gap-6 md:flex-row md:items-center">
+
+            <div>
+
+              <p className="text-[10px] uppercase tracking-[0.3em] text-indigo-200/40">
+                Decision Layer
+              </p>
+
+              <h2 className="mt-2 text-xl font-semibold text-white md:text-2xl">
+                What should management investigate next?
+              </h2>
+
+              <p className="mt-2 max-w-2xl text-sm leading-6 text-white/40">
+                Open the intelligence layer to review funnel leakage,
+                stage-aging signals, conversion opportunities, and
+                data-quality context.
+              </p>
+
+            </div>
+
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedStage("Pipeline");
+                setIsIntelligenceOpen(true);
+              }}
+              className="group shrink-0 rounded-xl border border-indigo-300/[0.15] bg-indigo-300/[0.07] px-5 py-3 text-sm font-medium text-indigo-100 transition hover:border-indigo-300/[0.3] hover:bg-indigo-300/[0.12]"
+            >
+              <span className="mr-2 transition group-hover:mr-3">
+                Open Management Intelligence
+              </span>
+
+              <span className="text-indigo-200/50">
+                →
+              </span>
+
+            </button>
+
+          </div>
+
+        </section>
+
+        {/* Footer */}
+        <footer className="mt-10 border-t border-white/[0.06] py-6">
+
+          <div className="flex flex-col justify-between gap-2 text-[10px] uppercase tracking-[0.2em] text-white/20 sm:flex-row">
+
+            <span>
+              Lead Funnel Conversion Observatory · PoC-7
+            </span>
+
+            <span>
+              Synthetic Data · Decision Support Interface
+            </span>
+
+          </div>
+
+        </footer>
+
+      </main>
+
+      {/* Management Intelligence */}
+      <IntelligencePanel
+        isOpen={isIntelligenceOpen}
+        onClose={() =>
+          setIsIntelligenceOpen(false)
+        }
+        stage={selectedStage}
+      />
+
+      {/* Developer Metadata */}
+      <MetadataModal
+        isOpen={isMetadataOpen}
+        onClose={() =>
+          setIsMetadataOpen(false)
+        }
+      />
+
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/CohortHeatmap.tsx">
+"use client";
+
+import { useEffect, useRef } from "react";
+import * as echarts from "echarts";
+
+import type { CRMLead } from "@/types/crm";
+
+type CohortHeatmapProps = {
+  data: CRMLead[];
+};
+
+const months = ["Jan", "Feb", "Mar"];
+const stages = ["Lead", "Qualified", "Opportunity", "Proposal", "Won"];
+
+export default function CohortHeatmap({ data }: CohortHeatmapProps) {
+  const chartRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!chartRef.current) return;
+
+    const chart = echarts.init(chartRef.current);
+
+    const heatmapData: [number, number, number][] = [];
+
+    months.forEach((month, monthIndex) => {
+      const monthRecords = data.filter(
+        (lead) => lead.date.slice(5, 7) === String(monthIndex + 1).padStart(2, "0")
+      );
+
+      stages.forEach((stage, stageIndex) => {
+        const count = monthRecords.filter(
+          (lead) => lead.stage === stage
+        ).length;
+
+        const percentage =
+          monthRecords.length > 0
+            ? Number(((count / monthRecords.length) * 100).toFixed(1))
+            : 0;
+
+        heatmapData.push([monthIndex, stageIndex, percentage]);
+      });
+    });
+
+    const option: echarts.EChartsOption = {
+      backgroundColor: "transparent",
+
+      tooltip: {
+        position: "top",
+        backgroundColor: "rgba(7, 9, 18, 0.96)",
+        borderColor: "rgba(255,255,255,0.1)",
+        textStyle: {
+          color: "#ffffff",
+        },
+        formatter: (params: unknown) => {
+          const item = params as {
+            value: [number, number, number];
+          };
+
+          const [monthIndex, stageIndex, value] = item.value;
+
+          return `
+            <div style="font-weight:600">
+              ${months[monthIndex]} · ${stages[stageIndex]}
+            </div>
+            <div style="margin-top:4px;opacity:.7">
+              ${value}% of cohort
+            </div>
+          `;
+        },
+      },
+
+      grid: {
+        left: "12%",
+        right: "5%",
+        top: "10%",
+        bottom: "14%",
+      },
+
+      xAxis: {
+        type: "category",
+        data: months,
+        splitArea: {
+          show: true,
+        },
+        axisLabel: {
+          color: "rgba(255,255,255,0.5)",
+        },
+        axisLine: {
+          lineStyle: {
+            color: "rgba(255,255,255,0.08)",
+          },
+        },
+      },
+
+      yAxis: {
+        type: "category",
+        data: stages,
+        splitArea: {
+          show: true,
+        },
+        axisLabel: {
+          color: "rgba(255,255,255,0.5)",
+        },
+        axisLine: {
+          lineStyle: {
+            color: "rgba(255,255,255,0.08)",
+          },
+        },
+      },
+
+      visualMap: {
+        min: 0,
+        max: 100,
+        calculable: false,
+        orient: "horizontal",
+        left: "center",
+        bottom: "0%",
+        textStyle: {
+          color: "rgba(255,255,255,0.35)",
+        },
+      },
+
+      series: [
+        {
+          name: "Cohort Distribution",
+          type: "heatmap",
+          data: heatmapData,
+
+          label: {
+            show: true,
+            color: "#ffffff",
+            fontSize: 11,
+            formatter: (params: unknown) => {
+              const item = params as {
+                value: [number, number, number];
+              };
+
+              return `${item.value[2]}%`;
+            },
+          },
+
+          itemStyle: {
+            borderColor: "rgba(7,9,18,0.8)",
+            borderWidth: 2,
+            borderRadius: 4,
+          },
+
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 18,
+              shadowColor: "rgba(124,140,255,0.3)",
+            },
+          },
+        },
+      ],
+    };
+
+    chart.setOption(option);
+
+    const handleResize = () => {
+      chart.resize();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      chart.dispose();
+    };
+  }, [data]);
+
+  return (
+    <div className="overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 shadow-2xl backdrop-blur-xl md:p-6">
+      <div className="mb-2">
+        <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-indigo-300/50">
+          Cohort Signal
+        </p>
+
+        <h2 className="mt-2 text-xl font-semibold tracking-tight text-white md:text-2xl">
+          Cohort Conversion Heatmap
+        </h2>
+
+        <p className="mt-1 text-sm text-white/40">
+          Stage distribution across monthly lead cohorts
+        </p>
+      </div>
+
+      <div
+        ref={chartRef}
+        className="h-[390px] w-full md:h-[430px]"
+        aria-label="Cohort conversion heatmap"
+      />
+
+      <div className="border-t border-white/[0.06] pt-3">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-white/25">
+          Synthetic CRM Data · Percentages represent records within each monthly cohort
+        </p>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/FilterBar.tsx">
+"use client";
+
+type FilterBarProps = {
+  startDate: string;
+  endDate: string;
+  location: string;
+  team: string;
+  product: string;
+
+  locations: string[];
+  teams: string[];
+  products: string[];
+
+  onStartDateChange: (value: string) => void;
+  onEndDateChange: (value: string) => void;
+  onLocationChange: (value: string) => void;
+  onTeamChange: (value: string) => void;
+  onProductChange: (value: string) => void;
+
+  onReset: () => void;
+};
+
+export default function FilterBar({
+  startDate,
+  endDate,
+  location,
+  team,
+  product,
+  locations,
+  teams,
+  products,
+  onStartDateChange,
+  onEndDateChange,
+  onLocationChange,
+  onTeamChange,
+  onProductChange,
+  onReset,
+}: FilterBarProps) {
+  return (
+    <section className="rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 shadow-xl backdrop-blur-xl md:p-6">
+
+      {/* Header */}
+      <div className="mb-5 flex flex-col justify-between gap-3 sm:flex-row sm:items-start">
+
+        <div>
+          <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-indigo-300/50">
+            Observatory Controls
+          </p>
+
+          <h2 className="mt-2 text-base font-semibold text-white">
+            Refine the lead conversion view
+          </h2>
+        </div>
+
+        <div className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1.5">
+          <span className="text-[10px] uppercase tracking-wider text-white/35">
+            05 Filters
+          </span>
+        </div>
+
+      </div>
+
+      {/* Filters */}
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+
+        {/* From Date */}
+        <div>
+          <label
+            htmlFor="start-date"
+            className="mb-2 block text-[10px] font-medium uppercase tracking-[0.2em] text-white/35"
+          >
+            From Date
+          </label>
+
+          <input
+            id="start-date"
+            type="date"
+            value={startDate}
+            onChange={(event) =>
+              onStartDateChange(event.target.value)
+            }
+            className="h-12 w-full rounded-xl border border-white/[0.08] bg-black/20 px-4 text-sm text-white outline-none transition focus:border-indigo-300/[0.35] focus:bg-white/[0.04]"
+          />
+        </div>
+
+        {/* To Date */}
+        <div>
+          <label
+            htmlFor="end-date"
+            className="mb-2 block text-[10px] font-medium uppercase tracking-[0.2em] text-white/35"
+          >
+            To Date
+          </label>
+
+          <input
+            id="end-date"
+            type="date"
+            value={endDate}
+            onChange={(event) =>
+              onEndDateChange(event.target.value)
+            }
+            className="h-12 w-full rounded-xl border border-white/[0.08] bg-black/20 px-4 text-sm text-white outline-none transition focus:border-indigo-300/[0.35] focus:bg-white/[0.04]"
+          />
+        </div>
+
+        {/* Location */}
+        <div>
+          <label
+            htmlFor="location-filter"
+            className="mb-2 block text-[10px] font-medium uppercase tracking-[0.2em] text-white/35"
+          >
+            Location
+          </label>
+
+          <select
+            id="location-filter"
+            value={location}
+            onChange={(event) =>
+              onLocationChange(event.target.value)
+            }
+            className="h-12 w-full rounded-xl border border-white/[0.08] bg-black/20 px-4 text-sm text-white outline-none transition focus:border-indigo-300/[0.35] focus:bg-white/[0.04]"
+          >
+            <option value="All">
+              All Locations
+            </option>
+
+            {locations.map((item) => (
+              <option
+                key={item}
+                value={item}
+                className="bg-[#090b16] text-white"
+              >
+                {item}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Team */}
+        <div>
+          <label
+            htmlFor="team-filter"
+            className="mb-2 block text-[10px] font-medium uppercase tracking-[0.2em] text-white/35"
+          >
+            Team
+          </label>
+
+          <select
+            id="team-filter"
+            value={team}
+            onChange={(event) =>
+              onTeamChange(event.target.value)
+            }
+            className="h-12 w-full rounded-xl border border-white/[0.08] bg-black/20 px-4 text-sm text-white outline-none transition focus:border-indigo-300/[0.35] focus:bg-white/[0.04]"
+          >
+            <option value="All">
+              All Teams
+            </option>
+
+            {teams.map((item) => (
+              <option
+                key={item}
+                value={item}
+                className="bg-[#090b16] text-white"
+              >
+                {item}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Product */}
+        <div>
+          <label
+            htmlFor="product-filter"
+            className="mb-2 block text-[10px] font-medium uppercase tracking-[0.2em] text-white/35"
+          >
+            Product
+          </label>
+
+          <select
+            id="product-filter"
+            value={product}
+            onChange={(event) =>
+              onProductChange(event.target.value)
+            }
+            className="h-12 w-full rounded-xl border border-white/[0.08] bg-black/20 px-4 text-sm text-white outline-none transition focus:border-indigo-300/[0.35] focus:bg-white/[0.04]"
+          >
+            <option value="All">
+              All Products
+            </option>
+
+            {products.map((item) => (
+              <option
+                key={item}
+                value={item}
+                className="bg-[#090b16] text-white"
+              >
+                {item}
+              </option>
+            ))}
+          </select>
+        </div>
+
+      </div>
+
+      {/* Reset */}
+      <div className="mt-4 flex justify-end">
+        <button
+          type="button"
+          onClick={onReset}
+          className="rounded-lg border border-white/[0.07] bg-white/[0.02] px-3 py-2 text-[10px] font-medium uppercase tracking-[0.15em] text-white/35 transition hover:border-white/[0.15] hover:bg-white/[0.05] hover:text-white/70"
+        >
+          Reset Filters
+        </button>
+      </div>
+
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/FunnelChart.tsx">
+"use client";
+
+import { useEffect, useRef } from "react";
+import * as echarts from "echarts";
+
+import type { CRMLead, LeadStage } from "@/types/crm";
+
+type FunnelChartProps = {
+  data: CRMLead[];
+  onStageClick?: (stage: LeadStage) => void;
+};
+
+const funnelStages: LeadStage[] = [
+  "Lead",
+  "Qualified",
+  "Opportunity",
+  "Proposal",
+  "Won",
+];
+
+export default function FunnelChart({
+  data,
+  onStageClick,
+}: FunnelChartProps) {
+  const chartRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!chartRef.current) return;
+
+    const chart = echarts.init(chartRef.current);
+
+    const funnelData = funnelStages.map((stage) => ({
+      name: stage,
+      value: data.filter((lead) => lead.stage === stage).length,
+    }));
+
+    const maxValue = Math.max(
+      ...funnelData.map((item) => item.value),
+      1
+    );
+
+    const option: echarts.EChartsOption = {
+      backgroundColor: "transparent",
+
+      tooltip: {
+        trigger: "item",
+        backgroundColor: "rgba(7, 9, 18, 0.96)",
+        borderColor: "rgba(255,255,255,0.1)",
+        textStyle: {
+          color: "#ffffff",
+        },
+        formatter: "{b}: {c} leads",
+      },
+
+      series: [
+        {
+          name: "Lead Funnel",
+          type: "funnel",
+
+          left: "10%",
+          top: "5%",
+          bottom: "5%",
+          width: "80%",
+
+          min: 0,
+          max: maxValue,
+
+          minSize: "20%",
+          maxSize: "100%",
+
+          sort: "none",
+          gap: 6,
+
+          label: {
+            show: true,
+            position: "inside",
+
+            color: "#ffffff",
+            fontSize: 15,
+            fontWeight: 600,
+
+            formatter: "{b}\n{c} leads",
+          },
+
+          labelLine: {
+            show: false,
+          },
+
+          itemStyle: {
+            borderColor: "rgba(255,255,255,0.12)",
+            borderWidth: 1,
+            opacity: 0.9,
+          },
+
+          emphasis: {
+            label: {
+              fontSize: 17,
+              fontWeight: 700,
+            },
+
+            itemStyle: {
+              opacity: 1,
+              shadowBlur: 25,
+              shadowColor: "rgba(124,140,255,0.25)",
+            },
+          },
+
+          data: funnelData,
+        },
+      ],
+    };
+
+    chart.setOption(option);
+
+    const handleChartClick = (params: {
+      componentType?: string;
+      seriesType?: string;
+      name?: string;
+    }) => {
+      if (
+        params.componentType === "series" &&
+        params.seriesType === "funnel" &&
+        params.name &&
+        onStageClick
+      ) {
+        onStageClick(params.name as LeadStage);
+      }
+    };
+
+    chart.on("click", handleChartClick);
+
+    const handleResize = () => {
+      chart.resize();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      chart.off("click", handleChartClick);
+      window.removeEventListener("resize", handleResize);
+      chart.dispose();
+    };
+  }, [data, onStageClick]);
+
+  return (
+    <div className="observatory-glow overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 shadow-2xl backdrop-blur-xl md:p-6">
+      <div className="mb-2 flex flex-col justify-between gap-3 sm:flex-row sm:items-start">
+        <div>
+          <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-indigo-300/50">
+            Primary Signal
+          </p>
+
+          <h2 className="mt-2 text-xl font-semibold tracking-tight text-white md:text-2xl">
+            Lead Funnel
+          </h2>
+
+          <p className="mt-1 max-w-xl text-sm text-white/40">
+            Lead progression from initial contact to successful conversion
+          </p>
+        </div>
+
+        <div className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1.5">
+          <span className="text-[10px] uppercase tracking-wider text-white/35">
+            {data.length} records
+          </span>
+        </div>
+      </div>
+
+      <div
+        ref={chartRef}
+        className="h-[440px] w-full cursor-pointer md:h-[500px]"
+        aria-label="Lead funnel conversion chart"
+      />
+
+      <div className="flex items-center justify-between border-t border-white/[0.06] pt-3">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-white/25">
+          Synthetic CRM Data · Funnel stages shown in pipeline order
+        </p>
+
+        <p className="hidden text-[10px] uppercase tracking-[0.15em] text-indigo-200/35 sm:block">
+          Click a stage for intelligence
+        </p>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/IntelligencePanel.tsx">
+"use client";
+
+type IntelligencePanelProps = {
+  isOpen: boolean;
+  onClose: () => void;
+  title?: string;
+  stage?: string;
+};
+
+const stageInsights: Record<
+  string,
+  {
+    insight: string;
+    investigation: string;
+    nextStep: string;
+  }
+> = {
+  Lead: {
+    insight:
+      "Review lead volume and identify whether incoming leads are progressing into qualification efficiently.",
+    investigation:
+      "Compare lead sources, locations, teams, and products to identify where new leads are being delayed or lost.",
+    nextStep:
+      "Review lead sources and qualification performance, then investigate the records with the longest stage age.",
+  },
+
+  Qualified: {
+    insight:
+      "Qualified leads represent the transition from initial interest into sales-ready opportunities.",
+    investigation:
+      "Check whether qualified leads are progressing into Opportunity or remaining in the stage for too long.",
+    nextStep:
+      "Investigate qualification criteria, team performance, and aging records to reduce leakage before Opportunity.",
+  },
+
+  Opportunity: {
+    insight:
+      "Opportunity is a key conversion checkpoint where pipeline value can be lost through slow progression.",
+    investigation:
+      "Compare Opportunity aging and conversion across location, team, product, and date filters to identify bottlenecks.",
+    nextStep:
+      "Prioritize aging opportunities and investigate why they are not progressing toward Proposal.",
+  },
+
+  Proposal: {
+    insight:
+      "Proposal is close to the final conversion stage, so delays here can directly affect win performance.",
+    investigation:
+      "Review proposal aging, win rates, and differences across teams, locations, and products.",
+    nextStep:
+      "Investigate long-aging proposals and identify the main reasons they are not converting to Won.",
+  },
+
+  Won: {
+    insight:
+      "Won deals represent successful conversion and the realized portion of the pipeline.",
+    investigation:
+      "Compare winning patterns across location, team, product, and acquisition source to understand what drives successful conversion.",
+    nextStep:
+      "Identify the highest-performing segments and investigate whether those patterns can be replicated across the pipeline.",
+  },
+
+  Pipeline: {
+    insight:
+      "Select a funnel stage or visualization to investigate conversion performance.",
+    investigation:
+      "Investigate where leads are slowing down or dropping out of the pipeline and compare the affected stage across location, team, product, and date filters.",
+    nextStep:
+      "Review the selected stage, identify the largest leakage or aging signal, and drill into the underlying lead records.",
+  },
+};
+
+export default function IntelligencePanel({
+  isOpen,
+  onClose,
+  title = "Management Intelligence",
+  stage = "Pipeline",
+}: IntelligencePanelProps) {
+  const intelligence =
+    stageInsights[stage] ?? stageInsights.Pipeline;
+
+  return (
+    <>
+      {/* Backdrop */}
+      {isOpen && (
+        <button
+          type="button"
+          aria-label="Close intelligence panel"
+          onClick={onClose}
+          className="fixed inset-0 z-40 cursor-default bg-black/40 backdrop-blur-[2px]"
+        />
+      )}
+
+      {/* Intelligence Panel */}
+      <aside
+        className={`fixed right-0 top-0 z-50 flex h-full w-full max-w-md transform flex-col border-l border-white/10 bg-slate-950/95 shadow-2xl backdrop-blur-xl transition-transform duration-300 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* Header */}
+        <div className="flex shrink-0 items-start justify-between p-6">
+          <div className="min-w-0 pr-4">
+            <p className="text-xs uppercase tracking-[0.2em] text-white/40">
+              Intelligence Interface
+            </p>
+
+            <h2 className="mt-2 text-xl font-semibold text-white">
+              {title}
+            </h2>
+          </div>
+
+          <button
+            type="button"
+            onClick={onClose}
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 text-lg text-white/60 transition hover:bg-white/10 hover:text-white"
+            aria-label="Close intelligence panel"
+          >
+            ×
+          </button>
+        </div>
+
+        {/* Scrollable Content */}
+        <div className="min-h-0 flex-1 overflow-y-auto px-6 pb-6 pr-4">
+          <div className="space-y-5">
+            {/* Selected Area */}
+            <div className="rounded-xl border border-white/10 bg-white/[0.04] p-4">
+              <p className="text-xs uppercase tracking-wider text-white/40">
+                Selected Area
+              </p>
+
+              <p className="mt-2 text-lg font-medium text-white">
+                {stage}
+              </p>
+            </div>
+
+            {/* Key Insight */}
+            <div className="rounded-xl border border-white/10 bg-white/[0.04] p-4">
+              <p className="text-xs uppercase tracking-wider text-white/40">
+                Key Insight
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-white/70">
+                {intelligence.insight}
+              </p>
+            </div>
+
+            {/* Management Investigation */}
+            <div className="rounded-xl border border-white/10 bg-white/[0.04] p-4">
+              <p className="text-xs uppercase tracking-wider text-white/40">
+                Management Investigation
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-white/70">
+                {intelligence.investigation}
+              </p>
+            </div>
+
+            {/* Recommended Next Step */}
+            <div className="rounded-xl border border-white/10 bg-white/[0.04] p-4">
+              <p className="text-xs uppercase tracking-wider text-white/40">
+                Recommended Next Step
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-white/70">
+                {intelligence.nextStep}
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </>
+  );
+}
+</file>
+
+<file path="src/components/KPISection.tsx">
+"use client";
+
+import {
+  getAverageStageAge,
+  getOverallConversion,
+  getOpportunityCount,
+  getTotalLeads,
+  getWonLeads,
+  getWonValue,
+} from "@/lib/calculations";
+
+import type { CRMLead } from "@/types/crm";
+
+type KPISectionProps = {
+  data: CRMLead[];
+};
+
+export default function KPISection({ data }: KPISectionProps) {
+  const totalLeads = getTotalLeads(data);
+  const opportunities = getOpportunityCount(data);
+  const wonLeads = getWonLeads(data);
+  const conversion = getOverallConversion(data);
+  const averageAge = getAverageStageAge(data);
+  const wonValue = getWonValue(data);
+
+  const kpis = [
+    {
+      label: "Total Leads",
+      value: totalLeads.toLocaleString(),
+      description: "Synthetic CRM records",
+    },
+    {
+      label: "Opportunities",
+      value: opportunities.toLocaleString(),
+      description: "Active opportunity stage",
+    },
+    {
+      label: "Won Deals",
+      value: wonLeads.toLocaleString(),
+      description: "Successfully converted",
+    },
+    {
+      label: "Conversion Rate",
+      value: `${conversion}%`,
+      description: "Lead to Won",
+    },
+    {
+      label: "Average Stage Age",
+      value: `${averageAge} days`,
+      description: "Across all stages",
+    },
+    {
+      label: "Won Pipeline Value",
+      value: `₹${wonValue.toLocaleString("en-IN")}`,
+      description: "Value of won deals",
+    },
+  ];
+
+  return (
+    <section className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
+      {kpis.map((kpi, index) => (
+        <div
+          key={kpi.label}
+          className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.035] p-4 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-indigo-300/20 hover:bg-white/[0.055]"
+        >
+          <div className="absolute right-0 top-0 h-16 w-16 rounded-full bg-indigo-400/[0.04] blur-2xl transition duration-300 group-hover:bg-indigo-400/[0.10]" />
+
+          <div className="relative">
+            <div className="flex items-center justify-between">
+              <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-white/35">
+                {kpi.label}
+              </p>
+
+              <span className="text-[10px] text-white/20">
+                0{index + 1}
+              </span>
+            </div>
+
+            <p className="mt-4 truncate text-2xl font-semibold tracking-tight text-white">
+              {kpi.value}
+            </p>
+
+            <p className="mt-2 text-[11px] text-white/35">
+              {kpi.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/MetadataModal.tsx">
+"use client";
+
+type MetadataModalProps = {
+  isOpen: boolean;
+  onClose: () => void;
+};
+
+export default function MetadataModal({
+  isOpen,
+  onClose,
+}: MetadataModalProps) {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-[60] flex items-center justify-center px-4 py-6">
+      {/* Backdrop */}
+      <button
+        type="button"
+        aria-label="Close developer information"
+        onClick={onClose}
+        className="absolute inset-0 h-full w-full bg-black/70 backdrop-blur-md"
+      />
+
+      {/* Modal */}
+      <div className="cinematic-enter relative max-h-[90vh] w-full max-w-md overflow-y-auto rounded-3xl border border-white/[0.10] bg-[#090b16]/95 shadow-2xl backdrop-blur-2xl">
+        {/* Glow */}
+        <div className="pointer-events-none absolute left-1/2 top-[-180px] h-[350px] w-[350px] -translate-x-1/2 rounded-full bg-indigo-500/[0.10] blur-[100px]" />
+
+        {/* Header */}
+        <div className="relative flex items-start justify-between border-b border-white/[0.07] px-6 py-5">
+          <div className="min-w-0 pr-4">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-indigo-300/50">
+              Developer Signature
+            </p>
+
+            <h2 className="mt-2 text-xl font-semibold leading-tight text-white">
+              Lead Funnel Conversion Observatory
+            </h2>
+          </div>
+
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.03] text-white/50 transition hover:bg-white/[0.08] hover:text-white"
+          >
+            ✕
+          </button>
+        </div>
+
+        {/* Metadata */}
+        <div className="relative space-y-3 p-6">
+          {/* Architect */}
+          <div className="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-4">
+            <p className="text-[9px] uppercase tracking-[0.25em] text-white/25">
+              Architect
+            </p>
+
+            <p className="mt-2 text-sm font-medium text-white/80">
+              Dhanusha Cherian
+            </p>
+          </div>
+
+          {/* PoC + GitHub */}
+          <div className="grid grid-cols-2 gap-3">
+            <div className="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-4">
+              <p className="text-[9px] uppercase tracking-[0.25em] text-white/25">
+                PoC ID
+              </p>
+
+              <p className="mt-2 text-sm font-medium text-white/80">
+                PoC-7
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-4">
+              <p className="text-[9px] uppercase tracking-[0.25em] text-white/25">
+                GitHub
+              </p>
+
+              <p className="mt-2 whitespace-nowrap text-[13px] font-medium text-white/80">
+                @dhanushacherian
+              </p>
+            </div>
+          </div>
+
+          {/* Technology Stack */}
+          <div className="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-4">
+            <p className="text-[9px] uppercase tracking-[0.25em] text-white/25">
+              Technology Stack
+            </p>
+
+            <div className="mt-3 flex flex-wrap gap-2">
+              {[
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "ECharts",
+              ].map((technology) => (
+                <span
+                  key={technology}
+                  className="rounded-full border border-indigo-300/[0.12] bg-indigo-300/[0.04] px-3 py-1.5 text-[10px] text-indigo-100/60"
+                >
+                  {technology}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Internship */}
+          <div className="rounded-2xl border border-indigo-300/[0.10] bg-indigo-300/[0.035] p-4">
+            <p className="text-[9px] uppercase tracking-[0.25em] text-indigo-200/40">
+              Internship
+            </p>
+
+            <p className="mt-2 text-sm font-medium text-white/70">
+              Infocreon Internship
+            </p>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="border-t border-white/[0.07] px-6 py-4">
+          <p className="text-center text-[9px] uppercase tracking-[0.25em] text-white/20">
+            Lead Funnel Conversion Observatory · PoC-7
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/SankeyChart.tsx">
+"use client";
+
+import { useEffect, useRef } from "react";
+import * as echarts from "echarts";
+
+import type { CRMLead } from "@/types/crm";
+
+type SankeyChartProps = {
+  data: CRMLead[];
+};
+
+export default function SankeyChart({ data }: SankeyChartProps) {
+  const chartRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const container = chartRef.current;
+
+    if (!container) return;
+
+    const chart = echarts.init(container);
+    let disposed = false;
+
+    const countAtOrAfter = (stages: string[]) =>
+      data.filter((lead) => stages.includes(lead.stage)).length;
+
+    const nodes = [
+      { name: "Lead" },
+      { name: "Qualified" },
+      { name: "Opportunity" },
+      { name: "Proposal" },
+      { name: "Won" },
+    ];
+
+    const links = [
+      {
+        source: "Lead",
+        target: "Qualified",
+        value: countAtOrAfter([
+          "Qualified",
+          "Opportunity",
+          "Proposal",
+          "Won",
+        ]),
+      },
+      {
+        source: "Qualified",
+        target: "Opportunity",
+        value: countAtOrAfter([
+          "Opportunity",
+          "Proposal",
+          "Won",
+        ]),
+      },
+      {
+        source: "Opportunity",
+        target: "Proposal",
+        value: countAtOrAfter([
+          "Proposal",
+          "Won",
+        ]),
+      },
+      {
+        source: "Proposal",
+        target: "Won",
+        value: countAtOrAfter(["Won"]),
+      },
+    ].filter((link) => link.value > 0);
+
+    const option: echarts.EChartsOption = {
+      backgroundColor: "transparent",
+
+      tooltip: {
+        trigger: "item",
+        backgroundColor: "rgba(7, 9, 18, 0.96)",
+        borderColor: "rgba(255,255,255,0.1)",
+        textStyle: {
+          color: "#ffffff",
+        },
+      },
+
+      series: [
+        {
+          type: "sankey",
+
+          left: "2%",
+          right: "4%",
+          top: "8%",
+          bottom: "8%",
+
+          nodeWidth: 18,
+          nodeGap: 18,
+
+          draggable: true,
+
+          emphasis: {
+            focus: "adjacency",
+          },
+
+          label: {
+            color: "#ffffff",
+            fontSize: 12,
+            fontWeight: 600,
+          },
+
+          lineStyle: {
+            color: "gradient",
+            opacity: 0.35,
+            curveness: 0.5,
+          },
+
+          itemStyle: {
+            borderColor: "rgba(255,255,255,0.15)",
+            borderWidth: 1,
+          },
+
+          data: nodes,
+          links,
+        },
+      ],
+    };
+
+    chart.setOption(option);
+
+    const handleResize = () => {
+      if (disposed || chart.isDisposed()) {
+        return;
+      }
+
+      try {
+        chart.resize();
+      } catch {
+        // Ignore resize calls that occur during component teardown.
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    const resizeObserver = new ResizeObserver(() => {
+      handleResize();
+    });
+
+    resizeObserver.observe(container);
+
+    return () => {
+      disposed = true;
+
+      window.removeEventListener("resize", handleResize);
+      resizeObserver.disconnect();
+
+      if (!chart.isDisposed()) {
+        chart.dispose();
+      }
+    };
+  }, [data]);
+
+  return (
+    <div className="overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 shadow-2xl backdrop-blur-xl md:p-6">
+      <div className="mb-2 flex flex-col justify-between gap-3 sm:flex-row sm:items-start">
+        <div>
+          <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-indigo-300/50">
+            Flow Intelligence
+          </p>
+
+          <h2 className="mt-2 text-xl font-semibold tracking-tight text-white md:text-2xl">
+            Stage Flow
+          </h2>
+
+          <p className="mt-1 max-w-xl text-sm text-white/40">
+            Visualizes the movement of records through the conversion pipeline
+          </p>
+        </div>
+
+        <div className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1.5">
+          <span className="text-[10px] uppercase tracking-wider text-white/35">
+            Interactive
+          </span>
+        </div>
+      </div>
+
+      <div
+        ref={chartRef}
+        className="h-[400px] w-full md:h-[450px]"
+        aria-label="Lead stage flow Sankey chart"
+      />
+
+      <div className="border-t border-white/[0.06] pt-3">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-white/25">
+          Synthetic stage-flow model · Based on current CRM stage distribution
+        </p>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/StageAging.tsx">
+"use client";
+
+import { useEffect, useRef } from "react";
+import * as echarts from "echarts";
+
+import type { CRMLead } from "@/types/crm";
+import { getAverageAgeByStage } from "@/lib/calculations";
+
+type StageAgingProps = {
+  data: CRMLead[];
+};
+
+const stages = [
+  "Lead",
+  "Qualified",
+  "Opportunity",
+  "Proposal",
+  "Won",
+];
+
+export default function StageAging({ data }: StageAgingProps) {
+  const chartRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!chartRef.current) return;
+
+    const chart = echarts.init(chartRef.current);
+
+    const averages = getAverageAgeByStage(data);
+
+    const values = stages.map((stage) =>
+      Number((averages[stage] ?? 0).toFixed(1))
+    );
+
+    const option: echarts.EChartsOption = {
+      backgroundColor: "transparent",
+
+      tooltip: {
+        trigger: "axis",
+        axisPointer: {
+          type: "shadow",
+        },
+        backgroundColor: "rgba(7, 9, 18, 0.96)",
+        borderColor: "rgba(255,255,255,0.1)",
+        textStyle: {
+          color: "#ffffff",
+        },
+        formatter: (params: unknown) => {
+          const items = params as {
+            name: string;
+            value: number;
+          }[];
+
+          const item = items[0];
+
+          return `
+            <div style="font-weight:600">
+              ${item.name}
+            </div>
+            <div style="margin-top:4px;opacity:.7">
+              Average age: ${item.value} days
+            </div>
+          `;
+        },
+      },
+
+      grid: {
+        left: "8%",
+        right: "5%",
+        top: "10%",
+        bottom: "15%",
+        containLabel: true,
+      },
+
+      xAxis: {
+        type: "category",
+        data: stages,
+
+        axisLabel: {
+          color: "rgba(255,255,255,0.5)",
+          fontSize: 11,
+        },
+
+        axisLine: {
+          lineStyle: {
+            color: "rgba(255,255,255,0.08)",
+          },
+        },
+      },
+
+      yAxis: {
+        type: "value",
+
+        name: "Days",
+        nameTextStyle: {
+          color: "rgba(255,255,255,0.3)",
+        },
+
+        axisLabel: {
+          color: "rgba(255,255,255,0.4)",
+        },
+
+        splitLine: {
+          lineStyle: {
+            color: "rgba(255,255,255,0.06)",
+          },
+        },
+      },
+
+      series: [
+        {
+          name: "Average Stage Age",
+          type: "bar",
+          data: values,
+
+          barMaxWidth: 46,
+
+          label: {
+            show: true,
+            position: "top",
+            color: "rgba(255,255,255,0.65)",
+            fontSize: 11,
+            formatter: "{c}d",
+          },
+
+          itemStyle: {
+            borderRadius: [6, 6, 0, 0],
+            opacity: 0.85,
+          },
+
+          emphasis: {
+            itemStyle: {
+              opacity: 1,
+              shadowBlur: 20,
+              shadowColor: "rgba(124,140,255,0.3)",
+            },
+          },
+        },
+      ],
+    };
+
+    chart.setOption(option);
+
+    const handleResize = () => {
+      chart.resize();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      chart.dispose();
+    };
+  }, [data]);
+
+  return (
+    <div className="overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.025] p-5 shadow-2xl backdrop-blur-xl md:p-6">
+      <div className="mb-2 flex flex-col justify-between gap-3 sm:flex-row sm:items-start">
+        <div>
+          <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-indigo-300/50">
+            Bottleneck Signal
+          </p>
+
+          <h2 className="mt-2 text-xl font-semibold tracking-tight text-white md:text-2xl">
+            Stage Aging
+          </h2>
+
+          <p className="mt-1 text-sm text-white/40">
+            Average time records spend in each funnel stage
+          </p>
+        </div>
+
+        <div className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1.5">
+          <span className="text-[10px] uppercase tracking-wider text-white/35">
+            Aging Analysis
+          </span>
+        </div>
+      </div>
+
+      <div
+        ref={chartRef}
+        className="h-[380px] w-full md:h-[420px]"
+        aria-label="Average stage aging chart"
+      />
+
+      <div className="border-t border-white/[0.06] pt-3">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-white/25">
+          Synthetic CRM Data · Higher values indicate potential stage bottlenecks
+        </p>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/data/crmData.ts">
+import type { CRMLead, LeadStage } from "@/types/crm";
+
+export const crmData: CRMLead[] = [
+  {
+    id: "L001",
+    date: "2026-01-05",
+    location: "Bangalore",
+    team: "Enterprise",
+    product: "Payments",
+    source: "Website",
+    stage: "Won",
+    daysInStage: 8,
+    value: 85000,
+  },
+  {
+    id: "L002",
+    date: "2026-01-08",
+    location: "Mumbai",
+    team: "SMB",
+    product: "Analytics",
+    source: "Referral",
+    stage: "Opportunity",
+    daysInStage: 18,
+    value: 42000,
+  },
+  {
+    id: "L003",
+    date: "2026-01-10",
+    location: "Delhi",
+    team: "Enterprise",
+    product: "Payments",
+    source: "Website",
+    stage: "Proposal",
+    daysInStage: 12,
+    value: 110000,
+  },
+  {
+    id: "L004",
+    date: "2026-01-12",
+    location: "Chennai",
+    team: "SMB",
+    product: "Security",
+    source: "Campaign",
+    stage: "Qualified",
+    daysInStage: 6,
+    value: 28000,
+  },
+  {
+    id: "L005",
+    date: "2026-01-15",
+    location: "Bangalore",
+    team: "Enterprise",
+    product: "Analytics",
+    source: "Referral",
+    stage: "Won",
+    daysInStage: 10,
+    value: 92000,
+  },
+  {
+    id: "L006",
+    date: "2026-01-18",
+    location: "Hyderabad",
+    team: "Growth",
+    product: "Payments",
+    source: "Website",
+    stage: "Lead",
+    daysInStage: 4,
+    value: 35000,
+  },
+  {
+    id: "L007",
+    date: "2026-01-20",
+    location: "Mumbai",
+    team: "Enterprise",
+    product: "Security",
+    source: "Partner",
+    stage: "Lost",
+    daysInStage: 25,
+    value: 75000,
+  },
+  {
+    id: "L008",
+    date: "2026-01-22",
+    location: "Delhi",
+    team: "Growth",
+    product: "Analytics",
+    source: "Campaign",
+    stage: "Opportunity",
+    daysInStage: 15,
+    value: 46000,
+  },
+  {
+    id: "L009",
+    date: "2026-01-25",
+    location: "Chennai",
+    team: "Enterprise",
+    product: "Payments",
+    source: "Website",
+    stage: "Won",
+    daysInStage: 7,
+    value: 125000,
+  },
+  {
+    id: "L010",
+    date: "2026-01-27",
+    location: "Bangalore",
+    team: "SMB",
+    product: "Security",
+    source: "Referral",
+    stage: "Qualified",
+    daysInStage: 9,
+    value: 31000,
+  },
+  {
+    id: "L011",
+    date: "2026-02-01",
+    location: "Hyderabad",
+    team: "Growth",
+    product: "Payments",
+    source: "Website",
+    stage: "Proposal",
+    daysInStage: 21,
+    value: 68000,
+  },
+  {
+    id: "L012",
+    date: "2026-02-03",
+    location: "Mumbai",
+    team: "Enterprise",
+    product: "Analytics",
+    source: "Partner",
+    stage: "Won",
+    daysInStage: 11,
+    value: 98000,
+  },
+  {
+    id: "L013",
+    date: "2026-02-05",
+    location: "Delhi",
+    team: "SMB",
+    product: "Payments",
+    source: "Campaign",
+    stage: "Lead",
+    daysInStage: 5,
+    value: 27000,
+  },
+  {
+    id: "L014",
+    date: "2026-02-08",
+    location: "Bangalore",
+    team: "Growth",
+    product: "Security",
+    source: "Website",
+    stage: "Opportunity",
+    daysInStage: 23,
+    value: 54000,
+  },
+  {
+    id: "L015",
+    date: "2026-02-10",
+    location: "Chennai",
+    team: "Enterprise",
+    product: "Analytics",
+    source: "Referral",
+    stage: "Won",
+    daysInStage: 9,
+    value: 115000,
+  },
+  {
+    id: "L016",
+    date: "2026-02-12",
+    location: "Hyderabad",
+    team: "SMB",
+    product: "Security",
+    source: "Campaign",
+    stage: "Lost",
+    daysInStage: 31,
+    value: 39000,
+  },
+  {
+    id: "L017",
+    date: "2026-02-15",
+    location: "Mumbai",
+    team: "Growth",
+    product: "Payments",
+    source: "Website",
+    stage: "Qualified",
+    daysInStage: 8,
+    value: 44000,
+  },
+  {
+    id: "L018",
+    date: "2026-02-18",
+    location: "Delhi",
+    team: "Enterprise",
+    product: "Security",
+    source: "Partner",
+    stage: "Proposal",
+    daysInStage: 17,
+    value: 87000,
+  },
+  {
+    id: "L019",
+    date: "2026-02-20",
+    location: "Bangalore",
+    team: "SMB",
+    product: "Payments",
+    source: "Campaign",
+    stage: "Won",
+    daysInStage: 6,
+    value: 52000,
+  },
+  {
+    id: "L020",
+    date: "2026-02-22",
+    location: "Chennai",
+    team: "Growth",
+    product: "Analytics",
+    source: "Website",
+    stage: "Opportunity",
+    daysInStage: 14,
+    value: 61000,
+  },
+  {
+    id: "L021",
+    date: "2026-02-25",
+    location: "Hyderabad",
+    team: "Enterprise",
+    product: "Payments",
+    source: "Referral",
+    stage: "Won",
+    daysInStage: 8,
+    value: 105000,
+  },
+  {
+    id: "L022",
+    date: "2026-03-01",
+    location: "Mumbai",
+    team: "SMB",
+    product: "Security",
+    source: "Website",
+    stage: "Lead",
+    daysInStage: 3,
+    value: 25000,
+  },
+  {
+    id: "L023",
+    date: "2026-03-04",
+    location: "Delhi",
+    team: "Growth",
+    product: "Analytics",
+    source: "Campaign",
+    stage: "Qualified",
+    daysInStage: 7,
+    value: 47000,
+  },
+  {
+    id: "L024",
+    date: "2026-03-06",
+    location: "Bangalore",
+    team: "Enterprise",
+    product: "Payments",
+    source: "Partner",
+    stage: "Proposal",
+    daysInStage: 19,
+    value: 132000,
+  },
+  {
+    id: "L025",
+    date: "2026-03-08",
+    location: "Chennai",
+    team: "SMB",
+    product: "Analytics",
+    source: "Referral",
+    stage: "Won",
+    daysInStage: 10,
+    value: 58000,
+  },
+  {
+    id: "L026",
+    date: "2026-03-10",
+    location: "Hyderabad",
+    team: "Growth",
+    product: "Security",
+    source: "Website",
+    stage: "Opportunity",
+    daysInStage: 27,
+    value: 49000,
+  },
+  {
+    id: "L027",
+    date: "2026-03-12",
+    location: "Mumbai",
+    team: "Enterprise",
+    product: "Payments",
+    source: "Campaign",
+    stage: "Won",
+    daysInStage: 7,
+    value: 118000,
+  },
+  {
+    id: "L028",
+    date: "2026-03-15",
+    location: "Delhi",
+    team: "SMB",
+    product: "Analytics",
+    source: "Website",
+    stage: "Lost",
+    daysInStage: 35,
+    value: 33000,
+  },
+  {
+    id: "L029",
+    date: "2026-03-17",
+    location: "Bangalore",
+    team: "Growth",
+    product: "Payments",
+    source: "Referral",
+    stage: "Qualified",
+    daysInStage: 5,
+    value: 41000,
+  },
+  {
+    id: "L030",
+    date: "2026-03-20",
+    location: "Chennai",
+    team: "Enterprise",
+    product: "Security",
+    source: "Partner",
+    stage: "Won",
+    daysInStage: 13,
+    value: 101000,
+  },
+];
+
+export const stageOrder: LeadStage[] = [
+  "Lead",
+  "Qualified",
+  "Opportunity",
+  "Proposal",
+  "Won",
+  "Lost",
+];
+
+export const locations = [
+  "All Locations",
+  "Bangalore",
+  "Mumbai",
+  "Delhi",
+  "Chennai",
+  "Hyderabad",
+];
+
+export const teams = [
+  "All Teams",
+  "Enterprise",
+  "SMB",
+  "Growth",
+];
+
+export const products = [
+  "All Products",
+  "Payments",
+  "Analytics",
+  "Security",
+];
+</file>
+
+<file path="src/lib/calculations.ts">
+import type { CRMLead } from "@/types/crm";
+
+export function getStageCounts(data: CRMLead[]) {
+  return data.reduce<Record<string, number>>((counts, lead) => {
+    counts[lead.stage] = (counts[lead.stage] || 0) + 1;
+    return counts;
+  }, {});
+}
+
+export function getTotalLeads(data: CRMLead[]) {
+  return data.length;
+}
+
+export function getWonLeads(data: CRMLead[]) {
+  return data.filter((lead) => lead.stage === "Won").length;
+}
+
+export function getOpportunityCount(data: CRMLead[]) {
+  return data.filter(
+    (lead) => lead.stage === "Opportunity"
+  ).length;
+}
+
+export function getOverallConversion(data: CRMLead[]) {
+  if (data.length === 0) return 0;
+
+  const won = getWonLeads(data);
+
+  return (won / data.length) * 100;
+}
+
+export function getAverageStageAge(data: CRMLead[]) {
+  if (data.length === 0) return 0;
+
+  const total = data.reduce(
+    (sum, lead) => sum + Number(lead.daysInStage),
+    0
+  );
+
+  return total / data.length;
+}
+
+export function getAverageAgeByStage(
+  data: CRMLead[]
+): Record<string, number> {
+  const stages = [
+    "Lead",
+    "Qualified",
+    "Opportunity",
+    "Proposal",
+    "Won",
+  ];
+
+  const result: Record<string, number> = {};
+
+  stages.forEach((stage) => {
+    const records = data.filter(
+      (lead) => lead.stage === stage
+    );
+
+    if (records.length === 0) {
+      result[stage] = 0;
+      return;
+    }
+
+    const totalDays = records.reduce(
+      (sum, lead) => sum + Number(lead.daysInStage),
+      0
+    );
+
+    result[stage] = totalDays / records.length;
+  });
+
+  return result;
+}
+
+export function getTotalPipelineValue(data: CRMLead[]) {
+  return data.reduce(
+    (sum, lead) => sum + Number(lead.value || 0),
+    0
+  );
+}
+
+export function getWonValue(data: CRMLead[]) {
+  return data
+    .filter((lead) => lead.stage === "Won")
+    .reduce(
+      (sum, lead) => sum + Number(lead.value || 0),
+      0
+    );
+}
+</file>
+
+<file path="src/lib/download.ts">
+import type { CRMLead } from "@/types/crm";
+
+export function downloadJSON(data: CRMLead[]) {
+  const json = JSON.stringify(data, null, 2);
+
+  const blob = new Blob([json], {
+    type: "application/json",
+  });
+
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "lead-funnel-data.json";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  URL.revokeObjectURL(url);
+}
+
+export function downloadCSV(data: CRMLead[]) {
+  const headers = [
+    "id",
+    "date",
+    "location",
+    "team",
+    "product",
+    "source",
+    "stage",
+    "daysInStage",
+    "value",
+  ];
+
+  const rows = data.map((lead) => [
+    lead.id,
+    lead.date,
+    lead.location,
+    lead.team,
+    lead.product,
+    lead.source,
+    lead.stage,
+    lead.daysInStage,
+    lead.value,
+  ]);
+
+  const csv = [
+    headers.join(","),
+    ...rows.map((row) =>
+      row
+        .map((value) =>
+          `"${String(value).replace(/"/g, '""')}"`
+        )
+        .join(",")
+    ),
+  ].join("\n");
+
+  const blob = new Blob([csv], {
+    type: "text/csv;charset=utf-8;",
+  });
+
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "lead-funnel-data.csv";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  URL.revokeObjectURL(url);
+}
+</file>
+
+<file path="src/types/crm.ts">
+export type LeadStage =
+  | "Lead"
+  | "Qualified"
+  | "Opportunity"
+  | "Proposal"
+  | "Won"
+  | "Lost";
+
+export type CRMLead = {
+  id: string;
+  date: string;
+  location: string;
+  team: string;
+  product: string;
+  source: string;
+  stage: LeadStage;
+  daysInStage: number;
+  value: number;
+};
+</file>
+
+<file path=".gitignore">
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+</file>
+
+<file path="AGENTS.md">
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
+</file>
+
+<file path="CLAUDE.md">
+@AGENTS.md
+</file>
+
+<file path="eslint.config.mjs">
+import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+  ]),
+]);
+
+export default eslintConfig;
+</file>
+
+<file path="next.config.ts">
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
+};
+
+export default nextConfig;
+</file>
+
+<file path="package.json">
+{
+  "name": "lead-funnel-conversion-observatory",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "echarts": "^6.1.0",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+</file>
+
+<file path="postcss.config.mjs">
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+
+export default config;
+</file>
+
+<file path="README.md">
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</file>
+
+<file path="tsconfig.json">
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}
+</file>
+
+</files>
