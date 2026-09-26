@@ -30,21 +30,24 @@ The application provides:
 - Docker
 - Docker Desktop
 - WSL 2
+- Render Web Service
 
-## Getting Started
+## Project Structure
 
-### Prerequisites
-
-Make sure the following are installed:
-
-- Node.js
-- npm
-- Docker Desktop
-- WSL 2 on Windows
-
-## Run Locally
-
-Install the project dependencies:
-
-```powershell
-npm install
+```text
+POC-7-Lead-Funnel-Conversion-Observatory-Dhanusha-Phase2/
+│
+├── public/
+├── screenshots/
+├── src/
+├── .dockerignore
+├── .gitignore
+├── Dockerfile
+├── README.md
+├── eslint.config.mjs
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── tsconfig.json
+└── repomix-output.xml
